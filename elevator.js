@@ -4,7 +4,6 @@ module.exports = class Elevator {
     this.index = index
     this.onFloor = startFloor
     this.isMoving = false
-
   }
 
 }
