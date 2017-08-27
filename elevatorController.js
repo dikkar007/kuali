@@ -16,4 +16,29 @@ module.exports = class ElevatorController {
                             return new Elevator(self, index, 1)
                           })
   }
+
+  elevatorRequest (from, to) {
+    if (this.validateRange(from, to)) {
+      return
+    }
+  }
+
+  validateRange (from, to) {
+    if (to > this.floorsCount || from > this.floorsCount) {
+      console.log('#4 Req : An elevator cannot proceed above the top floor.')
+      return true
+    }
+
+    if (to < this.minFloor || from < this.minFloor) {
+      console.log('#5 Req :An elevator cannot proceed below the ground floor (assume 1 as the min)')
+      return true
+    }
+
+    if (to == from) {
+      console.log('To == From')
+      return true
+    }
+
+    return false
+  }
 }
