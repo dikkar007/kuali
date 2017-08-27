@@ -32,13 +32,29 @@ module.exports = class Elevator {
   }
 
   moveToDestUp (to) {
-
+    console.log('Req #2 On floor ' + this.onFloor)
+    if (this.onFloor == to) {
+      this.onDestFloor()
+    } else {
+      ++this.onFloor
+      this.moveToDestUp(to)
+    }
   }
 
   moveToDestDown (to) {
-
+    console.log('Req #2 On floor ' + this.onFloor)
+    if (this.onFloor == to) {
+      this.onDestFloor()
+    } else {
+      --this.onFloor
+      this.moveToDestDown(to)
+    }
   }
 
   onDestFloor () {
+
+    this.isMoving = false
+    console.log('Reached on destination floor ' + this.onFloor)
+    console.log('Req #3 Door open / closes on floor ' + this.onFloor)
   }
 }
