@@ -21,6 +21,8 @@ module.exports = class ElevatorController {
     if (this.validateRange(from, to)) {
       return
     }
+
+    console.log('#6 Req > Move from floor: ' + from + ' To : ' + to)
   }
 
   validateRange (from, to) {
