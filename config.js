@@ -5,3 +5,5 @@ class Config {
     var ec = new ElevatorController(4, 9) // number of elevators, number of floors
   }
 }
+
+new Config()
