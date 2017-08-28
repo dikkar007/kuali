@@ -1,0 +1,194 @@
+----- Start : Kuali Elevator -----
+#1 Req > Elevators : 4 Total Floors : 9 Min Floor :1
+#6 Req > Move from floor: 3 To : 8
+Elevator {
+  index: 0,
+  onFloor: 1,
+  isMoving: false,
+  trip: 0,
+  inService: false }
+Req #2 On floor 1
+Req #2 On floor 2
+Req #2 On floor 3
+Req #3 Door open / closes on floor 3
+Req #2 On floor 3
+Req #2 On floor 4
+Req #2 On floor 5
+Req #2 On floor 6
+Req #2 On floor 7
+Req #2 On floor 8
+Reached on destination floor 8
+Req #3 Door open / closes on floor 8
+#6 Req > Move from floor: 2 To : 7
+Elevator {
+  index: 1,
+  onFloor: 1,
+  isMoving: false,
+  trip: 0,
+  inService: false }
+Req #2 On floor 1
+Req #2 On floor 2
+Req #3 Door open / closes on floor 2
+Req #2 On floor 2
+Req #2 On floor 3
+Req #2 On floor 4
+Req #2 On floor 5
+Req #2 On floor 6
+Req #2 On floor 7
+Reached on destination floor 7
+Req #3 Door open / closes on floor 7
+#6 Req > Move from floor: 7 To : 2
+Elevator {
+  index: 1,
+  onFloor: 7,
+  isMoving: false,
+  trip: 1,
+  inService: false }
+Req #2 On floor 7
+Req #3 Door open / closes on floor 7
+Req #2 On floor 7
+Req #2 On floor 6
+Req #2 On floor 5
+Req #2 On floor 4
+Req #2 On floor 3
+Req #2 On floor 2
+Reached on destination floor 2
+Req #3 Door open / closes on floor 2
+#6 Req > Move from floor: 1 To : 7
+Elevator {
+  index: 2,
+  onFloor: 1,
+  isMoving: false,
+  trip: 0,
+  inService: false }
+Req #2 On floor 1
+Req #3 Door open / closes on floor 1
+Req #2 On floor 1
+Req #2 On floor 2
+Req #2 On floor 3
+Req #2 On floor 4
+Req #2 On floor 5
+Req #2 On floor 6
+Req #2 On floor 7
+Reached on destination floor 7
+Req #3 Door open / closes on floor 7
+#6 Req > Move from floor: 2 To : 6
+Elevator {
+  index: 1,
+  onFloor: 2,
+  isMoving: false,
+  trip: 2,
+  inService: false }
+Req #2 On floor 2
+Req #3 Door open / closes on floor 2
+Req #2 On floor 2
+Req #2 On floor 3
+Req #2 On floor 4
+Req #2 On floor 5
+Req #2 On floor 6
+Reached on destination floor 6
+Req #3 Door open / closes on floor 6
+#6 Req > Move from floor: 3 To : 8
+Elevator {
+  index: 3,
+  onFloor: 1,
+  isMoving: false,
+  trip: 0,
+  inService: false }
+Req #2 On floor 1
+Req #2 On floor 2
+Req #2 On floor 3
+Req #3 Door open / closes on floor 3
+Req #2 On floor 3
+Req #2 On floor 4
+Req #2 On floor 5
+Req #2 On floor 6
+Req #2 On floor 7
+Req #2 On floor 8
+Reached on destination floor 8
+Req #3 Door open / closes on floor 8
+#6 Req > Move from floor: 2 To : 7
+Elevator {
+  index: 1,
+  onFloor: 6,
+  isMoving: false,
+  trip: 3,
+  inService: false }
+Req #2 On floor 6
+Req #2 On floor 5
+Req #2 On floor 4
+Req #2 On floor 3
+Req #2 On floor 2
+Req #3 Door open / closes on floor 2
+Req #2 On floor 2
+Req #2 On floor 3
+Req #2 On floor 4
+Req #2 On floor 5
+Req #2 On floor 6
+Req #2 On floor 7
+Reached on destination floor 7
+Req #3 Door open / closes on floor 7
+#6 Req > Move from floor: 7 To : 2
+Elevator {
+  index: 1,
+  onFloor: 7,
+  isMoving: false,
+  trip: 4,
+  inService: false }
+Req #2 On floor 7
+Req #3 Door open / closes on floor 7
+Req #2 On floor 7
+Req #2 On floor 6
+Req #2 On floor 5
+Req #2 On floor 4
+Req #2 On floor 3
+Req #2 On floor 2
+Reached on destination floor 2
+Req #3 Door open / closes on floor 2
+#6 Req > Move from floor: 1 To : 7
+Elevator {
+  index: 1,
+  onFloor: 2,
+  isMoving: false,
+  trip: 5,
+  inService: false }
+Req #2 On floor 2
+Req #2 On floor 1
+Req #3 Door open / closes on floor 1
+Req #2 On floor 1
+Req #2 On floor 2
+Req #2 On floor 3
+Req #2 On floor 4
+Req #2 On floor 5
+Req #2 On floor 6
+Req #2 On floor 7
+Reached on destination floor 7
+Req #3 Door open / closes on floor 7
+#6 Req > Move from floor: 2 To : 6
+Elevator {
+  index: 1,
+  onFloor: 7,
+  isMoving: false,
+  trip: 6,
+  inService: false }
+Req #2 On floor 7
+Req #2 On floor 6
+Req #2 On floor 5
+Req #2 On floor 4
+Req #2 On floor 3
+Req #2 On floor 2
+Req #3 Door open / closes on floor 2
+Req #2 On floor 2
+Req #2 On floor 3
+Req #2 On floor 4
+Req #2 On floor 5
+Req #2 On floor 6
+Reached on destination floor 6
+Req #3 Door open / closes on floor 6
+#6 Req > Move from floor: 8 To : 11
+#4 Req : An elevator cannot proceed above the top floor.
+#6 Req > Move from floor: 8 To : -1
+#5 Req :An elevator cannot proceed below the ground floor (assume 1 as the min)
+#6 Req > Move from floor: 4 To : 4
+To == From
+----- End : Kuali Elevator -----

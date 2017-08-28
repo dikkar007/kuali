@@ -5,7 +5,7 @@
   "main": "config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node config.js"
+    "start": "node config.js > out-put.txt"
   },
   "repository": {
     "type": "git",
