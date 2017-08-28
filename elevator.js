@@ -1,11 +1,12 @@
-
+const Service = require('./service')
 module.exports = class Elevator {
 
   constructor (parent, index, startFloor) {
     this.index = index
     this.onFloor = startFloor
     this.isMoving = false
-
+    this.trip = 0
+    this.inService = false
   }
 
   move (from, to) {
@@ -52,7 +53,11 @@ module.exports = class Elevator {
   }
 
   onDestFloor () {
-
+    this.trip++
+    if (this.trip == 100) {
+      this.inService = true
+      new Service(this)
+    }
     this.isMoving = false
     console.log('Reached on destination floor ' + this.onFloor)
     console.log('Req #3 Door open / closes on floor ' + this.onFloor)
