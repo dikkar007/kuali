@@ -56,7 +56,7 @@ module.exports = class Elevator {
     this.trip++
     if (this.trip == 100) {
       this.inService = true
-      new Service(this)
+      new Service(this)  
     }
     this.isMoving = false
     console.log('Reached on destination floor ' + this.onFloor)
