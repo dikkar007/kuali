@@ -1,6 +1,7 @@
 const Elevator = require('./elevator')
 
 module.exports = class ElevatorController {
+
   constructor (elevators, floors) {
     var self = this
 
@@ -18,11 +19,34 @@ module.exports = class ElevatorController {
   }
 
   elevatorRequest (from, to) {
+    console.log('#6 Req > Move from floor: ' + from + ' To : ' + to)
     if (this.validateRange(from, to)) {
       return
     }
 
-    console.log('#6 Req > Move from floor: ' + from + ' To : ' + to)
+    /* #7 Req When an elevator request is made, the unoccupied elevator closest to it will answer the
+call, unless an occupied elevator is moving and will pass that floor on its way. The
+exception is that if an unoccupied elevator is already stopped at that floor, then it will
+always have the highest priority answering that call. */
+
+    var result = this.elevators.filter(function (elevator) {
+      return elevator.onFloor == from
+    })
+
+    if (!result.length) {
+      result = this.elevators.filter(function (elevator) {
+        return !elevator.isMoving
+      })
+    }
+
+    //closest
+    var elevator = result.sort(function (a, b) {
+      return Math.abs(from - a.onFloor) - Math.abs(from - b.onFloor)
+    })[0]
+
+    console.log(elevator)
+
+    elevator.move(from, to)
   }
 
   validateRange (from, to) {
