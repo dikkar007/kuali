@@ -63,7 +63,7 @@ always have the highest priority answering that call. */
     if (to == from) {
       console.log('To == From')
       return true
-    }
+    }  
 
     return false
   }

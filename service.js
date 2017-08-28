@@ -6,4 +6,4 @@ module.exports = class Service {
       this.parent.inService = false
     }, 120000)
   }
-}
+}  
